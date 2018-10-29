@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@android:color/white"
+                >
+
+                <Button
+                    android:text="星期"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btn1"
+                    android:background="@null"
+                    android:textColor="#38a2ff"
+                    android:longClickable="true"
+                    />
+
+                <Button
+                    android:text="月份"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/btn2"
+                    android:textColor="#38a2ff"
+                    android:background="@null"
+                    />
+            </LinearLayout>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tablayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cardview_light_background"
+                app:tabIndicatorColor="@android:color/black"
+                app:tabMode="fixed"
+                app:tabSelectedTextColor="@color/colorPrimaryDark"
+                app:tabTextColor="@android:color/black"
+                app:tabIndicatorHeight="5dp"
+                app:tabTextAppearance="@android:style/TextAppearance.DeviceDefault.Small" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/tab_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@android:color/white" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@android:color/darker_gray"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="1.0px"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:translationX="20dp"
+                    android:text="分析与建议"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:layout_margin="5dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1.0px"
+                    android:layout_margin="5dp"
+                    />
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="5dp"
+                    android:layout_margin="10dp"
+                    >
+
+                    <TextView
+                        android:id="@+id/heart_analyze_suggestion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:text=""
+                        />
+                </android.support.v7.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1.0px"
+                    android:layout_margin="5dp"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:translationX="20dp"
+                    android:text="科普君"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp"
+                    android:layout_margin="5dp"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1.0px"
+                    android:layout_margin="5dp"
+                    />
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="6dp"
+                    android:layout_margin="10dp"
+                    >
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:text="心率是指正常人安静状态下每分钟心跳的次数，也叫安静心率，一般为60～100次/分，可因年龄、性别或其他生理因素产生个体差异。一般来说，年龄越小，心率越快，老年人心跳比年轻人慢，女性的心率比同龄男性快，这些都是正常的生理现象。安静状态下，成人正常心率为60～100次/分钟，理想心率应为55～70次/分钟（运动员的心率较普通成人偏慢，一般为50次/分钟左右）。
+"
+                        />
+                </android.support.v7.widget.CardView>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="@android:color/darker_gray"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="1.0px"
+                    android:layout_margin="5dp"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</LinearLayout>

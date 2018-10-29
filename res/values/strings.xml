@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">IntelligentCarAPP</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_loading">LoadingActivity</string>
+    <string name="title_activity_thanks">ThanksActivity</string>
+    <string name="large_text">
+        感谢使用的开源代码机器官方网站\n
+        1.	APP端\n
+        Android:提供Android软件需要的平台，为其提供操作系统支持。\n
+        Constraint layout:APP布局界面的优化。\n
+        Hellocharts:历史数据图表的制作，图形化界面。\n
+        Recyclerview:大量数据时滚动效果的实现。\n
+        Cardview:实现卡片布局，提高控件的美观性。\n
+        Okhttp:实现手机端与服务器端数据的网络交换。
+        Gson:解析Json字符串。\n
+        Bottom navigation bar:实现底部导航栏，用户可使用导航栏切换页面。\n
+        Circleimageview :图片的优化，圆形显示。\n
+        Baidu voice	:语音合成、语音识别、语音唤醒功能的实现。\n
+        相关依赖以及官方网站：\n
+        https://www.android.com/\n
+        com.android.support.constraint:constraint-layout:1.1.0\n
+        com.github.lecho:hellocharts-library:1.5.8@aar\n
+        com.android.support:recyclerview-v7:27.1.1\n
+        com.android.support:cardview-v7:27.1.1\n
+        com.squareup.okhttp3:okhttp:3.10.0\n
+        com.google.code.gson:gson:2.8.4\n
+        com.ashokvarma.android:bottom-navigation-bar:2.0.4\n
+        de.hdodenhof:circleimageview:2.2.0\n
+        2.	服务器端\n
+        Linux:为服务器提供操作系统支持。\n
+        Tomcat:实现对JSP的支持。\n
+        相关依赖以及官方网站：\n
+        https://www.linux.org/\n
+        http://tomcat.apache.org/\n
+        3.	智能硬件端\n
+        Linux:提供嵌入式软件需要的平台，为其提供操作系统支持。\n
+        OPencv:实现人脸识别，抓取眼部动作检测疲劳驾驶。\n
+        相关依赖以及官方网站：\n
+        https://www.linux.org/\n
+        https://opencv.org/\n
+
+    </string>
+    <string name="action_settings">Settings</string>
+</resources>

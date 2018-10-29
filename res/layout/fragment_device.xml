@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <lecho.lib.hellocharts.view.LineChartView
+                android:id="@+id/pulse_line_chart_view"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="250dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:text="中医脉象识别可以分析二十七种常用脉象及其相兼脉，概括临床错综复杂、千变万化的脉象，基本上可以满足“辨证论治”的需要。因此，对二十六种常用脉象的辨别和分析，是对复杂脉象进行辨别和分析的基础。"
+                />
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/upload_pulse_values"
+                android:layout_margin="10dp"
+                android:background="#e7eefa"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="上传采集数据"
+                android:textColor="#48494d"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/darker_gray"
+                android:layout_marginBottom="1.0px"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="分析结果"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/pulse_analysis"
+                android:text=""
+                />
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>
